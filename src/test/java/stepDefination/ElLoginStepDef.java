@@ -28,7 +28,11 @@ public class ElLoginStepDef {
 
 	@Given("Naviagate to the SignIn Page")
 	public void naviagate_to_the_sign_in_page() {
-		   driver.get("https://dev-app.elderlylife.co.uk/");
+		   //driver.get("https://dev-app.elderlylife.co.uk/");
+		   driver.get("https://dev.elderlylife.co.uk/");
+		   
+		   
+		   
 	}
 
 	@When("Enter emial and password")
@@ -48,7 +52,10 @@ public class ElLoginStepDef {
 		
 	}
 	
-	
+	@When("Enter Invalid emial and password")
+	public void enter_invalid_emial_and_password() throws Exception {
+		obj.test4();  
+	}
 	
 	
 	@AfterStep

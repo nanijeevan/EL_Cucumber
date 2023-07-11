@@ -37,11 +37,19 @@ public ELLoginPage(WebDriver driver)
 public void test1() throws Exception
 {
 	Thread.sleep(1000);
-	email.sendKeys("gleecustest1@gmail.com");
-	password.sendKeys("123456789");
+	email.sendKeys("gleecustest@demo.com");
+	password.sendKeys("12345678");
 }
 
 
+
+
+public void test4() throws Exception
+{
+	Thread.sleep(1000);
+	email.sendKeys("gleecustest1@gmail.com");
+	password.sendKeys("123456789");
+}
 public void test2()
 {
 	signInButton.click();	
